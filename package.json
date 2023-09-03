@@ -1,0 +1,21 @@
+{
+  "name": "consolelog-github-actions-appservice-azure",
+  "version": "1.0.0",
+  "description": "Projeto exemplificando o deploy automático de uma API em Node.js no Azure App Services",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovaljunior/consolelog-github-actions-appservice-azure.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jovaljunior/consolelog-github-actions-appservice-azure/issues"
+  },
+  "homepage": "https://github.com/jovaljunior/consolelog-github-actions-appservice-azure#readme",
+  "type": "module"
+}
