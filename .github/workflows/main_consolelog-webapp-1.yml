@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'consolelog-webapp-1-dev'
           slot-name: 'dev'
-          publish-profile: '7xxdrfGMYms5yr6pRoE5bqTP4eo9jfc3dpo1fiunsqjhLYX6KKo9ljpg4L2u'
+          publish-profile: ${{ secrets.DEVELOPMENT }}
           package: .
