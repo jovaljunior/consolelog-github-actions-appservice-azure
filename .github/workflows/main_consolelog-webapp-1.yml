@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'dev'
+      name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -50,7 +50,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'consolelog-webapp-1-dev'
-          slot-name: 'dev'
-          publish-profile: ${{ secrets.DEVELOPMENT }}
+          app-name: 'consolelog-webapp-1'
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F11914DE5E0548F895B7BB67DBFD06D0 }}
           package: .
